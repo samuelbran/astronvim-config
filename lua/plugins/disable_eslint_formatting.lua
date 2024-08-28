@@ -3,7 +3,7 @@ return {
   optional = true,
   opts = {
     autocmds = {
-      eslint_fix_on_save = false,
+      -- eslint_fix_on_save = false,
     },
   },
 }
