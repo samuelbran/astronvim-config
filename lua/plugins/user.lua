@@ -3,9 +3,7 @@
 
 ---@type LazySpec
 return {
-
   -- == Examples of Adding Plugins ==
-
   "andweeb/presence.nvim",
   {
     "ray-x/lsp_signature.nvim",
@@ -42,7 +40,7 @@ return {
   },
 
   -- You can disable default plugins as follows:
-  { "max397574/better-escape.nvim", enabled = false },
+  { "max397574/better-escape.nvim" },
 
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
   {
@@ -82,37 +80,6 @@ return {
         -- disable for .vim files, but it work for another filetypes
         Rule("a", "a", "-vim")
       )
-    end,
-  },
-
-  {
-    "rose-pine/neovim",
-    name = "rose-pine",
-    config = function()
-      require("rose-pine").setup {
-        variant = "main",
-        disable_italics = true,
-      }
-    end,
-  },
-  {
-    "karb94/neoscroll.nvim",
-    config = function() require("neoscroll").setup() end,
-  },
-  {
-    "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    ft = { "markdown" },
-    build = function(plugin)
-      if vim.fn.executable "npx" then
-        vim.cmd("!cd " .. plugin.dir .. " && cd app && npx --yes yarn install")
-      else
-        vim.cmd [[Lazy load markdown-preview.nvim]]
-        vim.fn["mkdp#util#install"]()
-      end
-    end,
-    init = function()
-      if vim.fn.executable "npx" then vim.g.mkdp_filetypes = { "markdown" } end
     end,
   },
 }
