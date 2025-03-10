@@ -9,7 +9,7 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "rasmus",
+    colorscheme = "gruvbox",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       -- init = { -- this table overrides highlights in all themes
@@ -21,6 +21,15 @@ return {
         NeoTreeTabSeparatorActive = { fg = "#1A1A19", bg = "#1A1A19" },
         NeoTreeTabInactive = { bg = "#222221" },
         NeoTreeTabSeparatorInactive = { fg = "#1A1A19", bg = "#222221" },
+      },
+      gruvbox = { -- a table of overrides/changes when applying the rose-pine theme
+        NeoTreeDirectoryIcon = { fg = "#83a597" },
+        NeoTreeDirectoryName = { fg = "#a89983" },
+        NeoTreeFileName = { fg = "#a89983" },
+        SignColumn = { bg = "#272727" }, -- Color for nvim-tree sidebar border
+        FoldColumn = { bg = "#272727" }, -- Color for nvim-tree sidebar border
+        LineNr = { bg = "#272727", fg = "#a89983" },
+        CursorLineNr = { bg = "#272727", fg = "#fabc2e", bold = true },
       },
     },
     -- Icons can be configured throughout the interface
@@ -37,10 +46,44 @@ return {
       LSPLoading9 = "⠇",
       LSPLoading10 = "⠏",
     },
-    separators = {
-      left = { "", "" },
-      right = { "", "" },
-      center = { "", "" },
+    status = {
+      -- Configure attributes of components defined in the `status` API. Check the AstroNvim documentation for a complete list of color names, this applies to colors that have `_fg` and/or `_bg` names with the suffix removed (ex. `git_branch_fg` as attributes from `git_branch`).
+      attributes = {
+        git_branch = { bold = true },
+      },
+      -- Configure colors of components defined in the `status` API. Check the AstroNvim documentation for a complete list of color names.
+      colors = {
+        git_branch_fg = "#ABCDEF",
+      },
+      -- Configure which icons that are highlighted based on context
+      icon_highlights = {
+        -- enable or disable breadcrumb icon highlighting
+        breadcrumbs = false,
+        -- Enable or disable the highlighting of filetype icons both in the statusline and tabline
+        file_icon = {
+          tabline = function(self) return self.is_active or self.is_visible end,
+          statusline = true,
+        },
+      },
+      -- Configure characters used as separators for various elements
+      separators = {
+        none = { "", "" },
+        left = { "", "  " },
+        right = { "  ", "" },
+        center = { "  ", "  " },
+        tab = { "", "" },
+        breadcrumbs = "  ",
+        path = "  ",
+      },
+      -- Configure enabling/disabling of winbar
+      winbar = {
+        enabled = { -- whitelist buffer patterns
+          filetype = { "gitsigns.blame" },
+        },
+        disabled = { -- blacklist buffer patterns
+          buftype = { "nofile", "terminal" },
+        },
+      },
     },
     text_icons = {
       TabClose = "x",

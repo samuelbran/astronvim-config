@@ -1,7 +1,8 @@
 return {
   "kvrohit/rasmus.nvim",
+  lazy = false,
+  priority = 1000,
   init = function() -- init function runs before the plugin is loaded
-    -- vim.g.rasmus_variant = "monochrome"
-    vim.g.rasmus_italic_comments = false
+    vim.g.rasmus_variant = "monochrome"
   end,
 }
