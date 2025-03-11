@@ -26,10 +26,20 @@ return {
         NeoTreeDirectoryIcon = { fg = "#83a597" },
         NeoTreeDirectoryName = { fg = "#a89983" },
         NeoTreeFileName = { fg = "#a89983" },
-        SignColumn = { bg = "#272727" }, -- Color for nvim-tree sidebar border
-        FoldColumn = { bg = "#272727" }, -- Color for nvim-tree sidebar border
+        SignColumn = { bg = "#272727" },
+        SignColumnNr = { bg = "#272727" },
+        FoldColumn = { bg = "#272727", fg = "#504945" },
+        ColorColumn = { bg = "#32302f" },
         LineNr = { bg = "#272727", fg = "#a89983" },
         CursorLineNr = { bg = "#272727", fg = "#fabc2e", bold = true },
+        CursorLine = { bg = "#32302f" },
+        GruvboxRedSign = { fg = "#fb4934", bg = "#272727" },
+        GruvboxGreenSign = { fg = "#b8bb26", bg = "#272727" },
+        GruvboxYellowSign = { fg = "#fabd2f", bg = "#272727" },
+        GruvboxBlueSign = { fg = "#83a598", bg = "#272727" },
+        GruvboxPurpleSign = { fg = "#d3869b", bg = "#272727" },
+        GruvboxAquaSign = { fg = "#8ec07c", bg = "#272727" },
+        GruvboxOrangeSign = { fg = "#fe8019", bg = "#272727" },
       },
     },
     -- Icons can be configured throughout the interface
