@@ -9,7 +9,7 @@ return {
   -- import/override with your plugins folder
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.recipes.vscode" },
-  { import = "astrocommunity.recipes.heirline-clock-statusline" },
+  -- { import = "astrocommunity.recipes.heirline-clock-statusline" },
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.media.image-nvim" },
