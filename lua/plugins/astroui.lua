@@ -9,7 +9,7 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "gruvbox",
+    colorscheme = "rose-pine",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       -- init = { -- this table overrides highlights in all themes
@@ -63,7 +63,7 @@ return {
       },
       -- Configure colors of components defined in the `status` API. Check the AstroNvim documentation for a complete list of color names.
       colors = {
-        git_branch_fg = "#ABCDEF",
+        -- git_branch_fg = "#ABCDEF",
       },
       -- Configure which icons that are highlighted based on context
       icon_highlights = {
