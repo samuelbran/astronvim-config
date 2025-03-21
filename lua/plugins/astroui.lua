@@ -41,6 +41,10 @@ return {
         GruvboxAquaSign = { fg = "#8ec07c", bg = "#272727" },
         GruvboxOrangeSign = { fg = "#fe8019", bg = "#272727" },
       },
+      ["rose-pine"] = {
+        CursorLine = { bg = "#2a273f" },
+        CursorLineNr = { bg = "#232136", fg = "#f6c177", bold = true },
+      },
     },
     -- Icons can be configured throughout the interface
     icons = {
@@ -68,7 +72,7 @@ return {
       -- Configure which icons that are highlighted based on context
       icon_highlights = {
         -- enable or disable breadcrumb icon highlighting
-        breadcrumbs = false,
+        breadcrumbs = true,
         -- Enable or disable the highlighting of filetype icons both in the statusline and tabline
         file_icon = {
           tabline = function(self) return self.is_active or self.is_visible end,
@@ -81,9 +85,9 @@ return {
         left = { "", "  " },
         right = { "  ", "" },
         center = { "  ", "  " },
-        tab = { "", "" },
-        breadcrumbs = "  ",
-        path = "  ",
+        tab = { "", "" },
+        breadcrumbs = " 󰅂 ",
+        path = " 󰅂 ",
       },
       -- Configure enabling/disabling of winbar
       winbar = {
