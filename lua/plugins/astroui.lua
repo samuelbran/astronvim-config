@@ -41,11 +41,6 @@ return {
         GruvboxAquaSign = { fg = "#8ec07c", bg = "#272727" },
         GruvboxOrangeSign = { fg = "#fe8019", bg = "#272727" },
       },
-      ["rose-pine"] = {
-        NeoTreeCursorLine = { bg = "#393552" },
-        CursorLine = { bg = "#2a273f" },
-        CursorLineNr = { bg = "#232136", fg = "#f6c177", bold = true },
-      },
     },
     -- Icons can be configured throughout the interface
     icons = {
