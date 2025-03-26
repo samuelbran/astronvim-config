@@ -35,6 +35,25 @@ return {
         "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠈⠉⠛⢟⣥⡮⣿⢿⣿⠋⢳⣯⣏⡣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ",
         "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠘⠶⢖⡴⣖⠛⠉⠤⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀ ",
       }
+
+      local get_icon = require("astroui").get_icon
+      opts.section.buttons.val = {
+        opts.button("LDR f g", get_icon("Search", 2, true) .. "Find Git File  "),
+        opts.button("LDR f o", get_icon("DefaultFile", 2, true) .. "Recents  "),
+        opts.button("LDR f w", get_icon("WordFile", 2, true) .. "Find Word  "),
+        opts.button("LDR f '", get_icon("Bookmarks", 2, true) .. "Bookmarks  "),
+        opts.button("LDR S l", get_icon("Refresh", 2, true) .. "Last Session  "),
+      }
+
+      opts.config.layout = {
+        { type = "padding", val = vim.fn.max { 0, vim.fn.floor(vim.fn.winheight(0) * 0.2) } },
+        opts.section.header,
+        { type = "padding", val = 3 },
+        opts.section.buttons,
+        { type = "padding", val = 2 },
+        opts.section.footer,
+      }
+
       return opts
     end,
   },
