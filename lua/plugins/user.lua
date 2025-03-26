@@ -48,7 +48,7 @@ return {
       opts.config.layout = {
         { type = "padding", val = vim.fn.max { 0, vim.fn.floor(vim.fn.winheight(0) * 0.2) } },
         opts.section.header,
-        { type = "padding", val = 3 },
+        { type = "padding", val = 4 },
         opts.section.buttons,
         { type = "padding", val = 2 },
         opts.section.footer,
