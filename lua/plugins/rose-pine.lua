@@ -1,3 +1,5 @@
+local bg_color = "leaf"
+
 return {
   "rose-pine/neovim",
   name = "rose-pine",
@@ -11,9 +13,9 @@ return {
       WinSeparator = { fg = "overlay" },
       NeoTreeNormal = { bg = "base" },
       NeoTreeNormalNC = { bg = "base" },
-      NeoTreeTabActive = { fg = "base", bg = "foam" },
-      NeoTreeTabSeparatorActive = { fg = "foam", bg = "foam" },
-      NeoTreeTabSeparatorInactive = { fg = "overlay", bg = "base" },
+      NeoTreeTabActive = { fg = "text", bg = bg_color },
+      NeoTreeTabSeparatorActive = { fg = bg_color, bg = bg_color },
+      NeoTreeTabSeparatorInactive = { fg = "overlay", bg = "surface" },
       NeoTreeCursorLine = { bg = "surface" },
       CursorLine = { bg = "surface" },
       CursorLineNr = { bg = "base", fg = "gold", bold = true },
