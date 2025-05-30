@@ -17,10 +17,10 @@ return {
       NeoTreeTabActive = { fg = fg_color, bg = bg_color },
       NeoTreeTabSeparatorActive = { fg = bg_color, bg = bg_color },
       NeoTreeTabSeparatorInactive = { fg = "overlay", bg = "surface" },
-      NeoTreeCursorLine = { bg = "surface" },
+      NeoTreeCursorLine = { bg = bg_color, fg = fg_color },
       CursorLine = { bg = "surface" },
-      CmdLine = { bg = "gold" },
       CursorLineNr = { bg = "base", fg = "gold", bold = true },
+      CmdLine = { bg = "gold", fg = "base", bold = true },
     },
   },
 }

@@ -13,4 +13,5 @@ return {
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.media.image-nvim" },
+  { import = "astrocommunity.search.nvim-spectre" },
 }
