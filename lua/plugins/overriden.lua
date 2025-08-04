@@ -5,8 +5,8 @@ return {
       return require("astrocore").extend_tbl(opts, {
         window = {
           position = "right",
-          -- width = 56,
-          width = 75,
+          width = 46,
+          -- width = 75,
         },
       })
     end,

@@ -81,7 +81,7 @@ return {
         left = { "", "  " },
         right = { "  ", "" },
         center = { "  ", "  " },
-        tab = { "", "" },
+        tab = { " ", " " },
         breadcrumbs = " 󰅂 ",
         path = " 󰅂 ",
       },
