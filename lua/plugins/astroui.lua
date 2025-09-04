@@ -15,14 +15,6 @@ return {
       -- init = { -- this table overrides highlights in all themes
       --   WinSeparator = { fg = "#333332" }, -- Color for nvim-tree sidebar border
       -- },
-      vague = {
-        WinSeparator = { fg = "#252530" },
-        NeoTreeTabActive = { bg = "#141415" },
-        NeoTreeTabSeparatorActive = { fg = "#141415", bg = "#141415" },
-        NeoTreeTabInactive = { bg = "#1c1c24" },
-        NeoTreeTabSeparatorInactive = { fg = "#1c1c24", bg = "#1c1c24" },
-        CursorLineNr = { bg = "#141415", fg = "#f3be7c", bold = true },
-      },
       rasmus = { -- a table of overrides/changes when applying the rasmus theme
         WinSeparator = { fg = "#333332" }, -- Color for nvim-tree sidebar border
         NeoTreeTabActive = { bg = "#1A1A19" },
