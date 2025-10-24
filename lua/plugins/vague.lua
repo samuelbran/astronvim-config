@@ -7,9 +7,9 @@ return {
       italic = false,
       on_highlights = function(hg, c)
         -- print(vim.inspect(hg))
-        hg.SnacksIndentChunk = { fg = c.number }
-        hg.SnacksIndent = { fg = c.number }
-        hg.SnacksIndentScope = { fg = c.number }
+        hg.SnacksIndentChunk.fg = c.number
+        hg.SnacksIndent.fg = c.number
+        hg.SnacksIndentScope.fg = c.number
 
         hg.WinSeparator = { fg = c.line }
         hg.NeoTreeTabActive = { bg = c.bg }
