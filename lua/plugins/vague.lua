@@ -11,8 +11,11 @@ return {
         local neoTreBg = c.bg
         local activeTabBg = c.bg
 
+        hg.CursorLineNr = { bg = c.bg, fg = c.number, gui = "bold" }
         hg.ColorColumn = { fg = c.line, bg = c.line }
         hg.WinSeparator = { fg = winSeparatorColor, bg = c.bg, ftm = "bold" }
+
+        -- NeoTree
         hg.NeoTreeVertSplit = { fg = winSeparatorColor, bg = c.bg, ftm = "bold" }
         hg.NeoTreeWinSeparator = { fg = winSeparatorColor, bg = c.bg, ftm = "bold" }
         hg.NeoTreeNormal = { fg = c.fg, bg = neoTreBg }
@@ -27,7 +30,6 @@ return {
         hg.NeoTreeIndentMarker = { fg = c.line }
         hg.NeoTreeDirectoryName = { fg = c.fg }
         hg.NeoTreeFileName = { fg = c.comment }
-        hg.CursorLineNr = { bg = c.bg, fg = c.number, gui = "bold" }
       end,
       colors = {
         line = "#1c1c24",
