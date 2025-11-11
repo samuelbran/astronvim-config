@@ -6,16 +6,19 @@ return {
     require("vague").setup {
       italic = false,
       on_highlights = function(hg, c)
-        -- print(vim.inspect(hg))
-        hg.SnacksIndentChunk.fg = c.number
-        hg.SnacksIndent.fg = c.number
-        hg.SnacksIndentScope.fg = c.number
+        local winSeparatorColor = "#262632"
 
-        hg.WinSeparator = { fg = c.line }
-        hg.NeoTreeTabActive = { bg = c.bg }
+        hg.ColorColumn = { fg = c.line, bg = c.line }
+        hg.WinSeparator = { fg = winSeparatorColor, bg = c.bg, ftm = "bold" }
+        hg.NeoTreeTabActive = { fg = c.keyword, bg = c.bg, gui = "bold" }
         hg.NeoTreeTabSeparatorActive = { fg = c.bg, bg = c.bg }
-        hg.NeoTreeTabInactive = { bg = c.inactiveBg }
-        hg.NeoTreeTabSeparatorInactive = { fg = c.inactiveBg, bg = c.inactiveBg }
+        hg.NeoTreeRootName = { gui = "bold" }
+        hg.NeoTreeTabInactive = { bg = c.bg }
+        hg.NeoTreeTabSeparatorInactive = { fg = c.bg, bg = c.bg }
+        hg.NeoTreeDirectoryIcon = { fg = c.keyword }
+        hg.NeoTreeIndentMarker = { fg = c.line }
+        hg.NeoTreeDirectoryName = { fg = c.fg }
+        hg.NeoTreeFileName = { fg = c.comment }
         hg.CursorLineNr = { bg = c.bg, fg = c.number, gui = "bold" }
       end,
       colors = {

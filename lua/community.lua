@@ -14,4 +14,5 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.media.image-nvim" },
   { import = "astrocommunity.search.nvim-spectre" },
+  { import = "astrocommunity.colorscheme.zenbones" },
 }
