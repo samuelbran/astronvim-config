@@ -13,6 +13,8 @@ return {
 
         hg.ColorColumn = { fg = c.line, bg = c.line }
         hg.WinSeparator = { fg = winSeparatorColor, bg = c.bg, ftm = "bold" }
+        hg.NeoTreeVertSplit = { fg = winSeparatorColor, bg = c.bg, ftm = "bold" }
+        hg.NeoTreeWinSeparator = { fg = winSeparatorColor, bg = c.bg, ftm = "bold" }
         hg.NeoTreeNormal = { fg = c.fg, bg = neoTreBg }
         hg.NeoTreeEndOfBuffer = { fg = c.fg, bg = neoTreBg }
         hg.NeoTreeTabActive = { fg = c.keyword, bg = activeTabBg, gui = "bold" }
