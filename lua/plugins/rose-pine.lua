@@ -6,7 +6,6 @@ return {
   lazy = false,
   priority = 1000,
   opts = {
-    variant = "moon",
     disable_italics = true,
     dim_inactive_windows = false,
     highlight_groups = {
