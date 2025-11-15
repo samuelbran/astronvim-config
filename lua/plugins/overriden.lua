@@ -1,5 +1,22 @@
 return {
   {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        vtsls = {
+          settings = {
+            typescript = {
+              preferences = {
+                importModuleSpecifierPreference = "non-relative",
+                importModuleSpecifierEnding = "minimal",
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+  {
     "nvim-neo-tree/neo-tree.nvim",
     opts = function(_, opts)
       return require("astrocore").extend_tbl(opts, {
