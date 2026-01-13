@@ -101,4 +101,8 @@ return {
       )
     end,
   },
+  {
+    "kevinhwang91/nvim-ufo",
+    commit = "5b75cf5fdb74054fc8badb2e7ca9911dc0470d94",
+  },
 }
