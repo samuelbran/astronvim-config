@@ -1,5 +1,5 @@
 return {
-  "vague2k/vague.nvim",
+  "vague-theme/vague.nvim",
   lazy = false,
   priority = 1000,
   config = function()
@@ -11,19 +11,19 @@ return {
         local neoTreBg = c.bg
         local activeTabBg = c.bg
 
-        hg.CursorLineNr = { bg = c.bg, fg = c.number, gui = "bold" }
+        hg.CursorLineNr = { bg = c.bg, fg = c.number }
         hg.ColorColumn = { fg = c.line, bg = c.line }
-        hg.WinSeparator = { fg = winSeparatorColor, bg = c.bg, ftm = "bold" }
+        hg.WinSeparator = { fg = winSeparatorColor, bg = c.bg }
 
         -- NeoTree
-        hg.NeoTreeVertSplit = { fg = winSeparatorColor, bg = c.bg, ftm = "bold" }
-        hg.NeoTreeWinSeparator = { fg = winSeparatorColor, bg = c.bg, ftm = "bold" }
+        hg.NeoTreeVertSplit = { fg = winSeparatorColor, bg = c.bg }
+        hg.NeoTreeWinSeparator = { fg = winSeparatorColor, bg = c.bg }
         hg.NeoTreeNormal = { fg = c.fg, bg = neoTreBg }
         hg.NeoTreeEndOfBuffer = { fg = c.fg, bg = neoTreBg }
-        hg.NeoTreeTabActive = { fg = c.keyword, bg = activeTabBg, gui = "bold" }
+        hg.NeoTreeTabActive = { fg = c.keyword, bg = activeTabBg }
         hg.NeoTreeTabSeparatorActive = { fg = activeTabBg, bg = activeTabBg }
-        hg.NeoTreeRootName = { gui = "bold" }
-        hg.NeoTreeGitUntracked = { fg = c.hint, ftm = "bold" }
+        -- hg.NeoTreeRootName = { gui = "bold" }
+        hg.NeoTreeGitUntracked = { fg = c.hint }
         hg.NeoTreeTabInactive = { bg = c.bg }
         hg.NeoTreeTabSeparatorInactive = { fg = c.bg, bg = c.bg }
         hg.NeoTreeDirectoryIcon = { fg = c.keyword }
