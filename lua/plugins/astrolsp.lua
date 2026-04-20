@@ -27,7 +27,7 @@ return {
         },
       },
       disabled = {
-        -- disable formatting capabilities for the listed language servers
+        "vtsls",
       },
       timeout_ms = 1000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
